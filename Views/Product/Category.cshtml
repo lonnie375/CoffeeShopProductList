@@ -1,0 +1,12 @@
+﻿@model List<Product>
+@{
+    ViewData["Title"] = "Category";
+}
+
+<h1>Category</h1>
+
+
+@foreach(Product cat in Model)
+{
+    <a href="/product/categorydetails?id=@cat.id">@cat.category</a><br />
+}

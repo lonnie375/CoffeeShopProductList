@@ -1,0 +1,18 @@
+﻿@model CoffeeShopProductListLab.Models.Product;
+
+@{
+    ViewData["Title"] = "CategoryDetails";
+}
+
+<h1>CategoryDetails</h1>
+
+
+@foreach(var emp in (List<Product>)ViewData["category"]){
+    <div>
+          @emp.Name
+          @emp.description
+          @emp.price
+          @emp.inventory
+          @emp.category
+    </div>
+}
